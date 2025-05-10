@@ -85,15 +85,16 @@ func decrypt(encodedCipherText, password string) (string, error) {
 }
 
 func main() {
-	password := "doublepassword"
-	message := "key words"
+	// password := "doublepassword"
+	// message := "key words"
 
-	encrypted, err := encrypt(message, password)
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println("Encrypted:", encrypted)
+	// encrypted, err := encrypt(message, password)
+	// if err != nil {
+	// 	panic(err)
+	// }
 
+	password := "double password"
+	encrypted := "encrypted key"
 	decrypted, err := decrypt(encrypted, password)
 	if err != nil {
 		panic(err)
